@@ -1,0 +1,12 @@
+c:\users\hp\source\repos\IVolunteer\IVolunteer\bin\Debug\netcoreapp2.0\IVolunteer.deps.json
+c:\users\hp\source\repos\IVolunteer\IVolunteer\bin\Debug\netcoreapp2.0\IVolunteer.runtimeconfig.json
+c:\users\hp\source\repos\IVolunteer\IVolunteer\bin\Debug\netcoreapp2.0\IVolunteer.runtimeconfig.dev.json
+c:\users\hp\source\repos\IVolunteer\IVolunteer\bin\Debug\netcoreapp2.0\IVolunteer.dll
+c:\users\hp\source\repos\IVolunteer\IVolunteer\bin\Debug\netcoreapp2.0\IVolunteer.pdb
+c:\users\hp\source\repos\IVolunteer\IVolunteer\obj\Debug\netcoreapp2.0\IVolunteer.csprojAssemblyReference.cache
+c:\users\hp\source\repos\IVolunteer\IVolunteer\obj\Debug\netcoreapp2.0\IVolunteer.csproj.CoreCompileInputs.cache
+c:\users\hp\source\repos\IVolunteer\IVolunteer\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+c:\users\hp\source\repos\IVolunteer\IVolunteer\obj\Debug\netcoreapp2.0\IVolunteer.AssemblyInfoInputs.cache
+c:\users\hp\source\repos\IVolunteer\IVolunteer\obj\Debug\netcoreapp2.0\IVolunteer.AssemblyInfo.cs
+c:\users\hp\source\repos\IVolunteer\IVolunteer\obj\Debug\netcoreapp2.0\IVolunteer.dll
+c:\users\hp\source\repos\IVolunteer\IVolunteer\obj\Debug\netcoreapp2.0\IVolunteer.pdb
