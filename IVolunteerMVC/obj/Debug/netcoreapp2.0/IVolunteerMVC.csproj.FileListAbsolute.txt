@@ -1,0 +1,12 @@
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\bin\Debug\netcoreapp2.0\IVolunteerMVC.deps.json
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\bin\Debug\netcoreapp2.0\IVolunteerMVC.runtimeconfig.json
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\bin\Debug\netcoreapp2.0\IVolunteerMVC.runtimeconfig.dev.json
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\bin\Debug\netcoreapp2.0\IVolunteerMVC.dll
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\bin\Debug\netcoreapp2.0\IVolunteerMVC.pdb
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\obj\Debug\netcoreapp2.0\IVolunteerMVC.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\obj\Debug\netcoreapp2.0\IVolunteerMVC.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\obj\Debug\netcoreapp2.0\IVolunteerMVC.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\obj\Debug\netcoreapp2.0\IVolunteerMVC.AssemblyInfo.cs
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\obj\Debug\netcoreapp2.0\IVolunteerMVC.dll
+C:\Users\HP\source\repos\IVolunteerMVC\IVolunteerMVC\obj\Debug\netcoreapp2.0\IVolunteerMVC.pdb
