@@ -1,0 +1,213 @@
+﻿@model IEnumerable<IVolunteerMVC.Models.ProjectModel.Posting>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <center>
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+    </center>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/banner5.jpeg" alt="ASP.NET" class="img-responsive" />
+        </div>
+        <div class="item">
+            <img src="~/images/banner6.jpeg" alt="Visual Studio" class="img-responsive" />
+        </div>
+        <div class="item">
+            <img src="~/images/banner7.jpeg" alt="Package Management" class="img-responsive" />
+        </div>
+        <div class="item">
+            <img src="~/images/banner8.jpeg" alt="Microsoft Azure" class="img-responsive" />
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+   
+
+    <div class="search_options well">
+        <div class="search_options_topic">
+            <center><h3>Volunteer Openings Filter</h3></center>
+        </div>
+
+        <div class="filterBar">
+            <center>
+                <form asp-action="Index" method="get">
+                    <div class="form-actions no-color">
+                        <p>
+                            <input placeholder="Title" type="text" name="SearchString" />
+                            <span><button type="submit" class="btn btn-primary btn-sm">Search</button></span> |
+                            <a asp-action="Index">Back to Full List</a>
+                        </p>
+                    </div>
+                </form>
+                
+                
+            </center>
+        </div>
+    </div>
+
+    <div class="postings">
+        <center><h2>Latest Volunteer Opportunities</h2></center>
+
+        <div class="well">
+            <h3>Job Title</h3>
+            <p>
+                Lorem ipsum dolor sit amet, eos te unum prompta, an duo meis disputando disputationi. Dicant discere incorrupte mea et. Graece tacimates id qui. Adhuc nostro accumsan et est, dolorem blandit est ei.
+                Eum in feugait reformidans. Odio habemus mea ex, regione nostrud mel at, pro ne nusquam senserit. Per reque copiosae voluptaria ut. Mentitum reprehendunt in quo, essent partiendo liberavisse ut vix. Et prima invenire oportere vis. Sint fierent cu vix, possit omittam urbanitas vis te.
+            </p>
+            <hr>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>Lagos</tr>
+                    <tr>Sciences</tr>
+                    <tr>View</tr>
+                    <tr><a href="#" class="btn btn-sm btn-success">Apply</a></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <center>
+            <button class="btn btn-default">Load More</button>
+        </center>
+
+        <center><h2>Browse by Categories</h2></center>
+
+        <div class="row">
+            <div class="col-md-6 well">
+                Administration
+            </div>
+            <div class="col-md-3 well">
+                Sciences
+            </div>
+            <div class="col-md-3 well">
+                Art
+            </div>
+            <div class="col-md-3 well">
+                Commercial
+            </div>
+            <div class="col-md-3 well">
+                Junior Secondary
+            </div>
+            <div class="col-md-3 well">
+                Senior Secondary
+            </div>
+            <div class="col-md-3 well">
+                Full-Time
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<h2>Index</h2>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by Job Title: <input type="text" name="SearchString" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfVolunteersNeeded)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgeRequirementFrom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AgeRequirementTo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOfPosting)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JobTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.JobLocation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfVolunteersNeeded)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgeRequirementFrom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AgeRequirementTo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.State)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfPosting)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ApplicationUserId)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.PostingId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.PostingId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.PostingId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@foreach (var item in Model)
+{
+    <div>
+        <a asp-action="Details" asp-route-id="@item.PostingId">
+            <div class="thumbnail">
+                <img src="~/images/jobs.jpg" alt="Job Image" class="img-responsive" />
+                <h5>@Html.DisplayFor(modelItem => item.JobTitle)</h5>
+                <h5>@Html.DisplayFor(modelItem => item.JobLocation)</h5>
+            </div>
+        </a>
+    </div>
+
+}

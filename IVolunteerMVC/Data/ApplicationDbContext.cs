@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using IVolunteerMVC.Models;
+using IVolunteerMVC.Models.ProjectModel;
 
 namespace IVolunteerMVC.Data
 {
@@ -22,5 +23,7 @@ namespace IVolunteerMVC.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
+
+        public DbSet<IVolunteerMVC.Models.ProjectModel.Posting> Posting { get; set; }
     }
 }

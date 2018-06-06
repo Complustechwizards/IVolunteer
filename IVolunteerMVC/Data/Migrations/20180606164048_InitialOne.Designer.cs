@@ -12,8 +12,8 @@ using System;
 namespace IVolunteerMVC.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180605141120_Chima")]
-    partial class Chima
+    [Migration("20180606164048_InitialOne")]
+    partial class InitialOne
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -41,20 +41,17 @@ namespace IVolunteerMVC.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed");
 
-                    b.Property<string>("FacebookLink")
-                        .IsRequired();
+                    b.Property<string>("FacebookLink");
 
                     b.Property<string>("FirstName")
                         .IsRequired();
 
-                    b.Property<string>("InstagramHandle")
-                        .IsRequired();
+                    b.Property<string>("InstagramHandle");
 
                     b.Property<string>("LastName")
                         .IsRequired();
 
-                    b.Property<string>("LinkedIn")
-                        .IsRequired();
+                    b.Property<string>("LinkedIn");
 
                     b.Property<bool>("LockoutEnabled");
 
@@ -75,8 +72,7 @@ namespace IVolunteerMVC.Data.Migrations
 
                     b.Property<string>("SecurityStamp");
 
-                    b.Property<string>("TwitterHandle")
-                        .IsRequired();
+                    b.Property<string>("TwitterHandle");
 
                     b.Property<bool>("TwoFactorEnabled");
 
@@ -154,17 +150,13 @@ namespace IVolunteerMVC.Data.Migrations
 
                     b.Property<int>("AgeRequirementTo");
 
-                    b.Property<int>("ApplicationUserId");
+                    b.Property<string>("ApplicationUserId");
 
-                    b.Property<string>("ApplicationUserId1");
-
-                    b.Property<string>("Category")
-                        .IsRequired();
+                    b.Property<int>("Category");
 
                     b.Property<DateTime>("DateOfPosting");
 
-                    b.Property<string>("JobLocation")
-                        .IsRequired();
+                    b.Property<int>("JobLocation");
 
                     b.Property<string>("JobTitle")
                         .IsRequired();
@@ -178,7 +170,7 @@ namespace IVolunteerMVC.Data.Migrations
 
                     b.HasKey("PostingId");
 
-                    b.HasIndex("ApplicationUserId1");
+                    b.HasIndex("ApplicationUserId");
 
                     b.ToTable("Posting");
                 });
@@ -314,7 +306,7 @@ namespace IVolunteerMVC.Data.Migrations
                 {
                     b.HasOne("IVolunteerMVC.Models.ApplicationUser", "ApplicationUser")
                         .WithMany("Postings")
-                        .HasForeignKey("ApplicationUserId1");
+                        .HasForeignKey("ApplicationUserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

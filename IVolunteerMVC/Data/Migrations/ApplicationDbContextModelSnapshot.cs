@@ -149,17 +149,13 @@ namespace IVolunteerMVC.Data.Migrations
 
                     b.Property<int>("AgeRequirementTo");
 
-                    b.Property<int>("ApplicationUserId");
+                    b.Property<string>("ApplicationUserId");
 
-                    b.Property<string>("ApplicationUserId1");
-
-                    b.Property<string>("Category")
-                        .IsRequired();
+                    b.Property<int>("Category");
 
                     b.Property<DateTime>("DateOfPosting");
 
-                    b.Property<string>("JobLocation")
-                        .IsRequired();
+                    b.Property<int>("JobLocation");
 
                     b.Property<string>("JobTitle")
                         .IsRequired();
@@ -173,7 +169,7 @@ namespace IVolunteerMVC.Data.Migrations
 
                     b.HasKey("PostingId");
 
-                    b.HasIndex("ApplicationUserId1");
+                    b.HasIndex("ApplicationUserId");
 
                     b.ToTable("Posting");
                 });
@@ -309,7 +305,7 @@ namespace IVolunteerMVC.Data.Migrations
                 {
                     b.HasOne("IVolunteerMVC.Models.ApplicationUser", "ApplicationUser")
                         .WithMany("Postings")
-                        .HasForeignKey("ApplicationUserId1");
+                        .HasForeignKey("ApplicationUserId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

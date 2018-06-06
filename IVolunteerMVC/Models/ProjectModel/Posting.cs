@@ -10,6 +10,14 @@ namespace IVolunteerMVC.Models.ProjectModel
     {
         Open, Closed
     }
+    public enum Location
+    {
+        Abia, Rivers, Enugu, Ebonyi, Imo, Lagos, Anambra, Oyo, Abuja
+    }
+    public enum Category
+    {
+        Administration,Science,Art,Commercial,Language,Counselling
+    }
     public class Posting
     {
         public int PostingId { get; set; }
@@ -20,15 +28,15 @@ namespace IVolunteerMVC.Models.ProjectModel
 
         [Required]
         [Display(Name = "Job Location")]
-        public string JobLocation { get; set; }
+        public Location JobLocation { get; set; }
 
         [Required]
         [Display(Name = "Job Category")]
-        public string Category { get; set; }
+        public Category Category { get; set; }
 
         [Required]
-        [Display(Name = "Requirements")]
-        public string Requirements { get; set; }
+        [Display(Name = "Description")]
+        public string Description { get; set; }
 
         [Required]
         [Display(Name = "Number Of Volunteers Needed")]
@@ -48,11 +56,11 @@ namespace IVolunteerMVC.Models.ProjectModel
 
         [DataType(DataType.Date)]
         [Display(Name = "Date Of Posting")]
-        public DateTime DateOfPosting{ get; set; }
+        public DateTime DateOfPosting { get; set; }
 
-        public virtual ICollection<JobApplication> JobApplications  { get; set; }
+        public virtual ICollection<JobApplication> JobApplications { get; set; }
 
         public virtual ApplicationUser ApplicationUser { get; set; }
-        public int ApplicationUserId { get; set; }
+        public string ApplicationUserId { get; set; }
     }
 }
