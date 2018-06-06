@@ -40,7 +40,11 @@
         </div>
     </nav>
     <div class="body">
-        @RenderBody()
+        @RenderSection("featured", required: false);
+        <div class="container">
+            @RenderBody()
+        </div>
+        
         <hr />
         <footer>
             <div class="container">
@@ -80,7 +84,7 @@
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
-        <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+        <script src ="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
         <script>
             CKEDITOR.replace('editor1');
         </script>

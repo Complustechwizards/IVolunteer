@@ -25,5 +25,7 @@ namespace IVolunteerMVC.Data
         }
 
         public DbSet<IVolunteerMVC.Models.ProjectModel.Posting> Posting { get; set; }
+
+        public DbSet<IVolunteerMVC.Models.ProjectModel.JobApplication> JobApplication { get; set; }
     }
 }

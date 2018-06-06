@@ -10,7 +10,7 @@ namespace IVolunteerMVC.Models.ProjectModel
     {
         public int JobApplicationId { get; set; }
 
-        [Display(Name = "Cover Letter")]
+        [Display(Name = "COVER LETTER")]
         [StringLength(500, MinimumLength = 10)]
         public string CoverLetter { get; set; }
 
@@ -22,6 +22,6 @@ namespace IVolunteerMVC.Models.ProjectModel
         public int PostingId { get; set; }
 
         public virtual ApplicationUser ApplicationUser { get; set; }
-        public int ApplicationUserId { get; set; }
+        public string ApplicationUserId { get; set; }
     }
 }
