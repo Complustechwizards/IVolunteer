@@ -36,7 +36,17 @@
 
         <div class="filterBar">
             <center>
-                <span><input placeholder="Search Categories"></span>
+                <span>
+                    <select role="listbox">
+                        <option>Select Categories</option>
+                        <option>Administration</option>
+                        <option>Sciences</option>
+                        <option>Art</option>
+                        <option>Commercial</option>
+                        <option>Language</option>
+                        <option>Counselling</option>
+                    </select>
+                </span>
                 <span><input placeholder="Location"></span>
                 <span>
                     <select role="listbox">
@@ -50,32 +60,75 @@
             </center>
         </div>
     </div>
+    <hr />
 
-    <div class="postings">
-        <center><h2>Latest Volunteer Opportunities</h2></center>
+    <div id="postings">
+        <h4>Latest Volunteer Opportunities</h4>
 
-        <div class="well">
-            <h3>Job Title</h3>
-            <p>
-                Lorem ipsum dolor sit amet, eos te unum prompta, an duo meis disputando disputationi. Dicant discere incorrupte mea et. Graece tacimates id qui. Adhuc nostro accumsan et est, dolorem blandit est ei.
-                Eum in feugait reformidans. Odio habemus mea ex, regione nostrud mel at, pro ne nusquam senserit. Per reque copiosae voluptaria ut. Mentitum reprehendunt in quo, essent partiendo liberavisse ut vix. Et prima invenire oportere vis. Sint fierent cu vix, possit omittam urbanitas vis te.
-            </p>
-            <hr>
-            <table class="table table-bordered">
-                <tbody>
-                    <tr>Lagos</tr>
-                    <tr>Sciences</tr>
-                    <tr>View</tr>
-                    <tr><a href="#" class="btn btn-sm btn-success">Apply</a></tr>
-                </tbody>
-            </table>
+        <div class="row">
+            <div class="well col-md-3 col-sm-12">
+                <a href="#">
+                    <div class="jobPost">
+                        <h4>Job Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, eos te unum prompta, an duo meis disputando disputationi. Dicant discere incorrupte mea et. Graece tacimates id qui. Adhuc nostro accumsan et est, dolorem blandit est ei.
+                        </p>
+                    </div>
+                </a>
+                <div class="jobPost_Prop"><span class="glyphicon glyphicon-map-marker"></span> Lagos </div>
+                <div class="jobPost_Prop"><span class="glyphicon glyphicon-list"></span> Administration </div>
+                <div class="jobPost_Prop"><a href="#" class="btn btn-sm btn-success">Apply</a></div>
+            </div>
+
+            <div class="well col-md-3 col-sm-12">
+                <a href="#">
+                    <div class="jobPost">
+                        <h4>Job Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, eos te unum prompta, an duo meis disputando disputationi. Dicant discere incorrupte mea et. Graece tacimates id qui. Adhuc nostro accumsan et est, dolorem blandit est ei.
+                        </p>
+                    </div>
+                </a>
+                <div class="jobPost_Prop"><span class="glyphicon glyphicon-map-marker"></span> Lagos </div>
+                <div class="jobPost_Prop"><span class="glyphicon glyphicon-list"></span> Administration </div>
+                <div class="jobPost_Prop"><a href="#" class="btn btn-sm btn-success">Apply</a></div>
+            </div>
+
+            <div class="well col-md-3 col-sm-12">
+                <a href="#">
+                    <div class="jobPost">
+                        <h4>Job Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, eos te unum prompta, an duo meis disputando disputationi. Dicant discere incorrupte mea et. Graece tacimates id qui. Adhuc nostro accumsan et est, dolorem blandit est ei.
+                        </p>
+                    </div>
+                </a>
+                <div class="jobPost_Prop"><span class="glyphicon glyphicon-map-marker"></span> Lagos </div>
+                <div class="jobPost_Prop"><span class="glyphicon glyphicon-list"></span> Administration </div>
+                <div class="jobPost_Prop"><a href="#" class="btn btn-sm btn-success">Apply</a></div>
+            </div>
+
+            <div class="well col-md-3 col-sm-12">
+                <a href="#">
+                    <div class="jobPost">
+                        <h4>Job Title</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, eos te unum prompta, an duo meis disputando disputationi. Dicant discere incorrupte mea et. Graece tacimates id qui. Adhuc nostro accumsan et est, dolorem blandit est ei.
+                        </p>
+                    </div>
+                </a>
+                <div class="jobPost_Prop"><span class="glyphicon glyphicon-map-marker"></span> Lagos </div>
+                <div class="jobPost_Prop"><span class="glyphicon glyphicon-list"></span> Administration </div>
+                <div class="jobPost_Prop"><a href="#" class="btn btn-sm btn-success">Apply</a></div>
+            </div> 
+
         </div>
 
         <center>
-            <button class="btn btn-default">Load More</button>
+            <button class="btn btn-load">Load More</button>
         </center>
 
-        <center><h2>Browse by Categories</h2></center>
+        <center><h4>Browse by Categories</h4></center>
 
         <div class="row">
             <div class="col-md-6 well">
@@ -91,10 +144,10 @@
                 Commercial
             </div>
             <div class="col-md-3 well">
-                Junior Secondary
+                Language
             </div>
             <div class="col-md-3 well">
-                Senior Secondary
+                Couselling
             </div>
             <div class="col-md-3 well">
                 Full-Time

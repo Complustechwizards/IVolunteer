@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    background-color: #f1f1f1;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* Wrapping element */
@@ -10,11 +11,7 @@
     padding-right: 15px;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
+
 
 /* Make .svg files in the carousel display properly in older browsers */
 .carousel-inner .item img[src$=".svg"] {
@@ -60,6 +57,12 @@ h3{
     font-size: 30px;
     color: #0e8744;
 }
+h4 {
+    padding: 0;
+    margin: 5px 0 25px 0;
+    font-size: 20px;
+    color: #0e8744;
+}
 .search_options .filterBar input{
         height: 40px;
         width: 150px;
@@ -84,3 +87,62 @@ h3{
         background-color: #0e8744;
         border: none;
     }
+    #postings{
+        margin-top: 40px;
+    }
+    #postings a{
+        text-decoration: none;
+    }
+    #postings .well{
+        background-color: #ffffff;
+        margin: 5px;
+        width: 24%;
+        box-shadow: 0px 1px 1px rgba(16, 16, 16, 0.69);
+        border:none;
+    }
+    #postings .jobPost{
+        border-bottom: solid 1px #808080;
+        margin-bottom: 8px
+    }
+    #postings .jobPost h4{
+        color: #101010;
+        font-size: 28px;
+        font-weight:600
+    }
+    #postings .well .jobPost_Prop{
+        float: left;
+        color:#808080;
+        padding: 5px;
+        font-weight: 300
+    }
+    #postings .btn-load{
+        margin-top:20px;
+        color: #101010;
+        border: solid 2px #101010;
+        border-radius:18px;
+        background:rgba(204, 204, 204, 0.00);
+        font-weight: 600
+    }
+        #postings .btn-load:hover {
+            margin-top: 20px;
+            color: #ffffff;
+            border: solid 2px #101010;
+            border-radius: 18px;
+            background-color: #101010;
+            font-weight: 600
+        }
+            #postings .btn-load:focus{
+                outline:none
+            }
+
+            footer {
+                background-color: #00150e;
+                margin: 0;
+                border-top: solid 5px #0e8744;
+                color: #ffffff;
+            }
+        footer a, footer a:hover {
+            color: #cfcfcf;
+        }
+   
+ 
