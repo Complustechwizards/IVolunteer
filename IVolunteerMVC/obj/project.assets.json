@@ -13265,11 +13265,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\IVolunteerMVC\\IVolunteerMVC\\IVolunteerMVC.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\IVolunteer\\IVolunteerMVC\\IVolunteerMVC.csproj",
       "projectName": "IVolunteerMVC",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\IVolunteerMVC\\IVolunteerMVC\\IVolunteerMVC.csproj",
+      "projectPath": "C:\\Users\\HP\\Source\\Repos\\IVolunteer\\IVolunteerMVC\\IVolunteerMVC.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\IVolunteerMVC\\IVolunteerMVC\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Source\\Repos\\IVolunteer\\IVolunteerMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
