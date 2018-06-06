@@ -1,4 +1,4 @@
-﻿@model IVolunteerMVC.Models.ProjectModel.Posting
+﻿@model IEnumerable<IVolunteerMVC.Models.ProjectModel.Posting>
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -73,7 +73,7 @@
                     </a>
                     <div class="jobPost_Prop"><span class="glyphicon glyphicon-map-marker"></span>  @Html.DisplayFor(modelItem => item.JobLocation) </div>
                     <div class="jobPost_Prop"><span class="glyphicon glyphicon-list"></span> @Html.DisplayFor(modelItem => item.Category) </div>
-                    <div class="jobPost_Prop"><a asp-controller="JobApplications" asp-action="Create" asp-route-id="@Model.PostingId" class="btn btn-sm btn-success">Apply</a></div>
+                    <div class="jobPost_Prop"><a asp-controller="JobApplications" asp-action="Create" asp-route-id="@item.PostingId" class="btn btn-sm btn-success">Apply</a></div>
                 </div>
             }
          
