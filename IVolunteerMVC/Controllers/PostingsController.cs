@@ -40,6 +40,22 @@ namespace IVolunteerMVC.Controllers
             return View(await _context.Posting.ToListAsync());
         }
 
+       
+        public async Task<IActionResult> Mypost()
+        {
+            string AppUser = _userManager.GetUserId(User);
+
+            var appId = _context.Posting.Include(s => s.ApplicationUser).Where(s => s.ApplicationUserId == AppUser);
+            return View(await appId.ToListAsync());
+        }
+
+        public async Task<IActionResult> PostApplications(int id)
+        {
+
+            var appId = _context.Posting.Include(s => s.JobApplications).Where(s => s.PostingId == id);
+            return View(await appId.ToListAsync());
+        }
+
         // GET: Postings/Details/5
         public async Task<IActionResult> Details(int? id)
         {

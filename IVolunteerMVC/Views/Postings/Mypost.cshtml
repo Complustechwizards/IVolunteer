@@ -1,0 +1,99 @@
+﻿@model IEnumerable<IVolunteerMVC.Models.ProjectModel.Posting>
+
+@{
+    ViewData["Title"] = "Mypost";
+}
+
+<h2>Mypost</h2>
+
+<div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="well col-md-3 col-sm-12">
+                    <a asp-action="Details" asp-route-id="@item.PostingId">
+                        <div class="jobPost">
+                            <h4>@Html.DisplayFor(modelItem => item.JobTitle)</h4>
+                            <p>
+                                @Html.DisplayNameFor(model => model.Description)
+                            </p>
+                        </div>
+                    </a>
+                    <div class="jobPost_Prop"><span class="glyphicon glyphicon-map-marker"></span>  @Html.DisplayFor(modelItem => item.JobLocation) </div>
+                    <div class="jobPost_Prop"><span class="glyphicon glyphicon-list"></span> @Html.DisplayFor(modelItem => item.Category) </div>
+                    <div class="jobPost_Prop"><a  asp-action="PostApplications" asp-route-id="@item.PostingId" class="btn btn-sm btn-success">View Applications</a></div>
+                </div>
+            }
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.JobTitle)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.JobLocation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumberOfVolunteersNeeded)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AgeRequirementFrom)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AgeRequirementTo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.State)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateOfPosting)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicationUser)
+            </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfVolunteersNeeded)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgeRequirementFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AgeRequirementTo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.State)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfPosting)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationUser.Id)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+</table>

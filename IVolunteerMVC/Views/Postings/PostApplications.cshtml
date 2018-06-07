@@ -1,0 +1,51 @@
+﻿@model IEnumerable<IVolunteerMVC.Models.ProjectModel.JobApplication>
+
+@{
+    ViewData["Title"] = "PostApplications";
+}
+
+<h2>PostApplications</h2>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+    <div class="row">
+        <h4>@Html.DisplayFor(modelItem => item.ApplicationUser.FirstName)</h4>
+        <h4>@Html.DisplayFor(modelItem => item.ApplicationUser.Email)</h4>
+        <p>@Html.DisplayFor(modelItem => item.CoverLetter)</p>
+        <div class="col-md-4">@Html.DisplayFor(modelItem => item.DateOfApplication)</div>
+    </div>
+    }
+</div>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CoverLetter)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateOfApplication)
+                </th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CoverLetter)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateOfApplication)
+                    </td>
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
